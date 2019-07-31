@@ -1,24 +1,13 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
+import Gallery from './components/ImageGallery'
+import Navbar from './components/Navbar'
+import Zmage from './components/Zmage'
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <Gallery perRow={2} count={4}/>  
+    <Navbar/>
+    <Zmage/>
     </div>
   );
 }
